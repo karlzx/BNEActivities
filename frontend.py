@@ -4,7 +4,7 @@ import numpy as np
 
 
 st.header("Brisbane Activities (Beta) 👀")
-
+st.write("Can't figure out what to do? Enter the filters below and find out what you can do around bris. More features TBA")
 
 activity_df = pd.read_csv('NewActivity.csv')
 
