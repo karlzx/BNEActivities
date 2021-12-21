@@ -6,7 +6,7 @@ import numpy as np
 st.header("Date Night (tm) 👀")
 
 
-activity_df = pd.read_excel('NewActivity.xlsx')
+activity_df = pd.read_csv('NewActivity.csv')
 
 
 price = activity_df['Price'].unique()
