@@ -29,5 +29,5 @@ col1, col2 = st.columns(2)
 with col1:
      st.map(activity_df) 
 with col2:
-     st.table(activity_df[["Short Activity","Price"]])
+     st.table(activity_df[["Tag","Short Activity","Price","Time","Duration"]])
 print(price)
