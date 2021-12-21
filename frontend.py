@@ -10,9 +10,15 @@ activity_df = pd.read_csv('NewActivity.csv')
 
 
 price = activity_df['Price'].unique()
+time = activity_df['Time'].unique()
+duration = activity_df['Duration'].unique()
 
-options = st.multiselect('What Price Range?',price)
-activity_df = activity_df[activity_df["Price"].isin(options)]
+
+priceop = st.multiselect('What Price Range?',price)
+timeop = st.multiselect('What Time Range?',time)
+durationop = st.multiselect('What Duration Range?',duration)
+
+activity_df = activity_df[activity_df["Price"].isin(priceop) and activity_df["Time"].isin(timeop) and activity_df["Duration"].isin(durationop)]
 
 print(activity_df)
 col1, col2 = st.columns(2)
