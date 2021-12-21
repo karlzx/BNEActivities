@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-st.header("Date Night (tm) 👀")
+st.header("Brisbane Activities (Beta) 👀")
 
 
 activity_df = pd.read_csv('NewActivity.csv')
